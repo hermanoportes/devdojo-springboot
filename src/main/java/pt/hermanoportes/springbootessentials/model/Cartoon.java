@@ -1,20 +1,11 @@
 package pt.hermanoportes.springbootessentials.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
 public class Cartoon {
+    private Long id;
     private String title;
-
-    public Cartoon(String title) {
-        this.title = title;
-    }
-
-    public Cartoon() {
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
 }
